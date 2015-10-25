@@ -1,0 +1,24 @@
+{
+  "name": "Name",
+  "version": "0.0.1",
+  "description": "",
+  "main": "init.js",
+  "scripts": {
+    "run": "electron . --environment development",
+    "build": "./script/compile && electron-packager ./ Name --platform=all --arch=all --version=0.34.0 --prune --asar --out=build --ignore=build --overwrite"
+  },
+  "author": "pastak",
+  "license": "MIT",
+  "compileCacheDir": "./compile-cache",
+  "devDependencies": {
+    "electron-compilers": "^1.0.0",
+    "electron-prebuilt": "^0.34.0"
+  },
+  "dependencies": {
+    "electron-compile": "^1.0.0",
+    "electron-packager": "^5.1.0",
+    "react": "^0.14.0",
+    "react-dom": "^0.14.0",
+    "yargs": "^3.29.0"
+  }
+}
